@@ -1,1 +1,24 @@
-<html></html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test PHPMailer Form</title>
+		<meta name="description" content="Testing PHPMailer on a variety of hosting options" />
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<h1>Test Email Form</h1>
+
+		<form method="post" action="send-email.php">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" required />
+
+			<label for="email">email</label>
+			<input type="email" name="email" id="email" required />
+
+			<label for="message">Message</label>
+			<textarea name="message" id="message" required></textarea>
+
+			<p><button>Send</button></p>
+		</form>
+	</body>
+</html>
