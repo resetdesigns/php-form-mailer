@@ -12,12 +12,12 @@ use PHPMailer\PHPMailer\SMTP;
 $mail = new PHPMailer(true);
 
 $mail->isSMTP();
-$mail->Host = 'relay-hosting.secureserver.net';
-$mail->SMTPAuth = true;
+$mail->Host = 'localhost';
+$mail->SMTPAuth = false;
 $mail->Port = 25;
 
-$mail->Username = "ewb8gf668kqu";
-$mail->Password = "wZ2pWJbU2GgY2Bx";
+// $mail->Username = "ewb8gf668kqu";
+// $mail->Password = "wZ2pWJbU2GgY2Bx";
 
 $mail->setFrom("eagleclaw@kungfuusa.com", "Website Form Submission");
 // $mail->addAddress("eagleclaw@kungfuusa.com", "Website Form Submission");
